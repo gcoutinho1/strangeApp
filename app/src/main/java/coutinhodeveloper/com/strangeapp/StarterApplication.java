@@ -3,8 +3,10 @@ package coutinhodeveloper.com.strangeapp;
 import android.app.Application;
 import android.util.Log;
 import com.parse.Parse;
+import com.parse.ParseACL;
 import com.parse.ParseException;
 import com.parse.ParseObject;
+import com.parse.ParseUser;
 import com.parse.SaveCallback;
 
 public class StarterApplication extends Application {
@@ -27,7 +29,7 @@ public class StarterApplication extends Application {
 
         );
 
-        ParseObject pontuacao = new ParseObject("Pontuacao");
+       /* ParseObject pontuacao = new ParseObject("Pontuacao");
         pontuacao.put("pontos",200);
         pontuacao.saveInBackground(new SaveCallback() {
             @Override
@@ -39,8 +41,12 @@ public class StarterApplication extends Application {
                     Log.i("testeExecucao","Falha ao salvar!");
                 }
             }
-        });
+        }); */
 
+        //ParseUser.enableAutomaticUser();
+        ParseACL defaultACL = new ParseACL();
+        defaultACL.setPublicReadAccess(true);
+        //ParseACL.setDefaultACL(defaultACL,true);
 
     }
 }
