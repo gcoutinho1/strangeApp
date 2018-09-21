@@ -5,9 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fundo_degrade"
+    android:gravity="center_vertical|center_horizontal"
     tools:context=".activity.LoginActivity">
-
-
 
 
     <ImageView
@@ -17,7 +16,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        app:srcCompat="@drawable/mainlogo" />
+        android:background="@drawable/mainlogo"
+        android:contentDescription="TODO" />
 
     <EditText
         android:id="@+id/editText"
@@ -65,7 +65,10 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="151dp"
+        android:onClick="abrirCadastroUsuario"
         android:text="@string/crie_conta" />
+
+
 
 
 

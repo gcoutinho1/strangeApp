@@ -7,17 +7,16 @@ import android.view.View;
 
 import coutinhodeveloper.com.strangeapp.R;
 
-public class LoginActivity extends AppCompatActivity {
+public class CadastroActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_cadastro);
     }
 
-    public void abrirCadastroUsuario(View view){
-
-        Intent intent = new Intent(LoginActivity.this,CadastroActivity.class);
+    public void abrirLoginUsuario(View view){
+        Intent intent = new Intent(CadastroActivity.this,LoginActivity.class);
         startActivity(intent);
     }
 }

@@ -2,4 +2,6 @@
     <string name="app_name">StrangeApp</string>
     <string name="botao_logar">Logar</string>
     <string name="crie_conta">Não tem conta ? crie uma</string>
+    <string name="botao_cadastrar">Cadastrar</string>
+    <string name="fazer_login">já tem conta ? faça o login</string>
 </resources>
