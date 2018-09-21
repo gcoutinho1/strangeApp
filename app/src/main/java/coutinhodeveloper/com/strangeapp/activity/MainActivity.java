@@ -1,6 +1,8 @@
 package coutinhodeveloper.com.strangeapp.activity;
 
 import android.content.Intent;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -25,6 +27,8 @@ import com.parse.SignUpCallback;
 import java.util.List;
 
 import coutinhodeveloper.com.strangeapp.R;
+import coutinhodeveloper.com.strangeapp.adapter.TabsAdapter;
+import coutinhodeveloper.com.strangeapp.util.SlidingTabLayout;
 
 /** Created by Guilherme Coutinho
  *  on 19/09/2018
@@ -33,6 +37,8 @@ import coutinhodeveloper.com.strangeapp.R;
 public class MainActivity extends AppCompatActivity {
 
     private Toolbar toolbarprincipal;
+    private SlidingTabLayout slidingTabLayout;
+    private ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +49,21 @@ public class MainActivity extends AppCompatActivity {
         toolbarprincipal = findViewById(R.id.toolbar_principal);
         toolbarprincipal.setLogo(R.drawable.strangebar);
         setSupportActionBar(toolbarprincipal);
+
+        // cfg abas
+        slidingTabLayout = findViewById(R.id.sliding_tab_main);
+        viewPager = findViewById(R.id.view_pager_main);
+
+        // cfg adapter
+        TabsAdapter tabsAdapter = new TabsAdapter(getSupportFragmentManager(),this);
+        viewPager.setAdapter(tabsAdapter);
+        slidingTabLayout.setCustomTabView(R.layout.tab_view,R.id.text_item_tab);
+        slidingTabLayout.setDistributeEvenly(true);
+        slidingTabLayout.setSelectedIndicatorColors(ContextCompat.getColor(this,R.color.CinzaEscuro));
+        slidingTabLayout.setViewPager(viewPager);
+
+
+
 
 
     }
