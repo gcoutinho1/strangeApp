@@ -4,4 +4,7 @@
     <string name="crie_conta">Não tem conta ? crie uma</string>
     <string name="botao_cadastrar">Cadastrar</string>
     <string name="fazer_login">já tem conta ? faça o login</string>
+    <string name="action_settings">Configurações</string>
+    <string name="action_exit">Sair</string>
+    <string name="action_share">Compartilhar</string>
 </resources>

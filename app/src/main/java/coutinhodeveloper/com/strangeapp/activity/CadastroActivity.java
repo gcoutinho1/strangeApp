@@ -16,6 +16,10 @@ import com.parse.SignUpCallback;
 import coutinhodeveloper.com.strangeapp.R;
 import coutinhodeveloper.com.strangeapp.util.ParseErros;
 
+/** Created by Guilherme Coutinho
+ *  on 21/09/2018
+ */
+
 public class CadastroActivity extends AppCompatActivity {
 
     private EditText textoUsuario;

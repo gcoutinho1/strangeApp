@@ -14,6 +14,10 @@ import com.parse.ParseUser;
 
 import coutinhodeveloper.com.strangeapp.R;
 
+/** Created by Guilherme Coutinho
+ *  on 21/09/2018
+ */
+
 public class LoginActivity extends AppCompatActivity {
     private EditText editLoginUsuario;
     private EditText editLoginSenha;

@@ -2,6 +2,10 @@ package coutinhodeveloper.com.strangeapp.util;
 
 import java.util.HashMap;
 
+/** Created by Guilherme Coutinho
+ *  on 21/09/2018
+ */
+
 public class ParseErros {
 
     private HashMap<Integer,String> erros;
