@@ -1,22 +1,34 @@
 package coutinhodeveloper.com.strangeapp.adapter;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.content.ContextCompat;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.style.ImageSpan;
 
+import coutinhodeveloper.com.strangeapp.R;
 import coutinhodeveloper.com.strangeapp.fragments.HomeFragment;
 import coutinhodeveloper.com.strangeapp.fragments.UsuariosFragment;
 
 public class TabsAdapter extends FragmentStatePagerAdapter {
 
     private Context context;
-    private String[] abas = new String[]{"HOME","USUÁRIOS"};
+    //private String[] abas = new String[]{"HOME","USUÁRIOS"};
+    private int[] icones = new int[]{R.drawable.ic_action_home,R.drawable.ic_people};
+    private int tamanhoIcone;
 
     public TabsAdapter(FragmentManager fm, Context c) {
         super(fm);
         this.context = c;
+        //configuração tamanho do ioone x dispositivo
+        double escala = this.context.getResources().getDisplayMetrics().density;
+        tamanhoIcone = (int) (36 * escala);
     }
 
     @Override
@@ -39,11 +51,21 @@ public class TabsAdapter extends FragmentStatePagerAdapter {
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        return abas[position];
+        //return abas[position];
+        // recuperar icone de acordo com a posição
+        Drawable drawable = ContextCompat.getDrawable(this.context,icones[position]);
+        drawable.setBounds(0,0,tamanhoIcone,tamanhoIcone);
+        //permite colocar uma img dentro de um texto
+        ImageSpan imageSpan = new ImageSpan(drawable);
+        //Classe utilizada para retornar CharSequence
+        SpannableString spannableString = new SpannableString(" ");
+        spannableString.setSpan(imageSpan,0,spannableString.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+        return spannableString;
     }
 
     @Override
     public int getCount() {
-        return abas.length;
+        return icones.length;
     }
 }
