@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">StrangeApp</string>
+    <string name="botao_logar">Logar</string>
+    <string name="crie_conta">Não tem conta ? crie uma</string>
 </resources>

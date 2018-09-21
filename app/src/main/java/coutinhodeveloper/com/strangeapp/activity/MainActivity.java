@@ -1,4 +1,4 @@
-package coutinhodeveloper.com.strangeapp;
+package coutinhodeveloper.com.strangeapp.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,6 +17,8 @@ import com.parse.SaveCallback;
 import com.parse.SignUpCallback;
 
 import java.util.List;
+
+import coutinhodeveloper.com.strangeapp.R;
 
 /** Created by Guilherme Coutinho
  *  on 19/09/2018
