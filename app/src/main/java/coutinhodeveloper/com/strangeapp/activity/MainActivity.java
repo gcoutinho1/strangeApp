@@ -37,6 +37,7 @@ import java.util.List;
 
 import coutinhodeveloper.com.strangeapp.R;
 import coutinhodeveloper.com.strangeapp.adapter.TabsAdapter;
+import coutinhodeveloper.com.strangeapp.fragments.HomeFragment;
 import coutinhodeveloper.com.strangeapp.util.SlidingTabLayout;
 
 /** Created by Guilherme Coutinho
@@ -133,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
                 byte[] byteArray = stream.toByteArray();
 
                 //mudando nome do arquivo no parse
-                SimpleDateFormat dateFormat = new SimpleDateFormat("ddmmaaaahhmmss");
+                SimpleDateFormat dateFormat = new SimpleDateFormat("ddmmyyyyhhmmss");
                 String nomeImagem = dateFormat.format(new Date());
 
                 //  criar arquivo do formato proprio do parse
@@ -150,11 +151,15 @@ public class MainActivity extends AppCompatActivity {
                     public void done(ParseException e) {
 
                         if (e==null){//sucesso
-                            Toast.makeText(getApplicationContext(),"Sua imagem foi postada!",Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(),"Sua imagem foi publicada!",Toast.LENGTH_LONG).show();
+                        // atualizando a listagem de items do fragmento HomeFragment
+                        TabsAdapter adapterNovo = (TabsAdapter) viewPager.getAdapter();
+                        HomeFragment homeFragmentNovo = (HomeFragment) adapterNovo.getFragment(0);
+                        homeFragmentNovo.atualizaPostagens();
 
 
                         }else {//erro
-                            Toast.makeText(getApplicationContext(),"Erro ao postar sua imagem",Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(),"Erro ao publicar sua imagem, tente novamente",Toast.LENGTH_LONG).show();
 
                         }
                     }
