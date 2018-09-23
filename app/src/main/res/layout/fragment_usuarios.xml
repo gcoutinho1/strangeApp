@@ -8,7 +8,7 @@
     <ListView
         android:layout_width="wrap_content"
         android:id="@+id/list_usuarios"
-        android:divider="@color/CinzaEscuro"
+        android:divider="@color/CinzaClaro"
         android:dividerHeight="1dp"
         android:layout_gravity="center_horizontal|top"
         android:layout_height="wrap_content" />
