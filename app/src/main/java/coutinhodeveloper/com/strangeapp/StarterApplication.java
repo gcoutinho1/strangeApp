@@ -9,6 +9,10 @@ import com.parse.ParseObject;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
 
+/** Created by Guilherme Coutinho
+ *  19/09/2018
+ */
+
 public class StarterApplication extends Application {
     @Override
     public void onCreate() {
