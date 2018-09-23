@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FFFFFF</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="ToolBar">#a2b2b3</color>
+    <color name="colorPrimary">#FB8C00</color>
+    <color name="colorPrimaryDark">#E65100</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="ToolBar">#FB8C00</color>
     <color name="CinzaEscuro">#5c5c5c</color>
     <color name="CinzaClaro">#F3F3F3</color>
     <color name="Preto">#000000</color>
+    <color name="amarelo">#e8c100</color>
+    <color name="amareloClaro">#e8d500</color>
+    <color name="roxoEscuro">#3a3a3a</color>
 </resources>

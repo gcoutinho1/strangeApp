@@ -5,7 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fundo_degrade"
+    android:gravity="center_vertical|center_horizontal"
     tools:context=".activity.CadastroActivity">
+    
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
 
     <ImageView
@@ -14,17 +19,17 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="15dp"
         app:srcCompat="@drawable/user_creation" />
 
     <EditText
         android:id="@+id/text_usuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="243dp"
-        android:layout_marginStart="14dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/imageView3"
         android:background="@drawable/fundo_caixa_texto"
         android:ems="10"
         android:hint="Digite seu usuario "
@@ -37,9 +42,10 @@
         android:id="@+id/text_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/text_usuario"
-        android:layout_marginBottom="182dp"
+        android:layout_below="@+id/text_usuario"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
         android:background="@drawable/fundo_caixa_texto"
         android:ems="10"
         android:hint="Digite seu email "
@@ -52,9 +58,10 @@
         android:id="@+id/text_senha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/text_usuario"
-        android:layout_marginBottom="118dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/text_email"
+        android:layout_marginTop="10dp"
         android:background="@drawable/fundo_caixa_texto"
         android:ems="10"
         android:hint="Digite sua senha "
@@ -67,9 +74,10 @@
         android:id="@+id/button_cadastrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="43dp"
+        android:layout_below="@+id/text_senha"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
         android:background="@drawable/fundo_botao"
         android:text="@string/botao_cadastrar" />
 
@@ -77,10 +85,12 @@
         android:id="@+id/text_faca_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/button_cadastrar"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="5dp"
         android:text="@string/fazer_login" />
+
+            </RelativeLayout>
 
 
 </RelativeLayout>
