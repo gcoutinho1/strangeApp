@@ -68,6 +68,7 @@
             android:id="@+id/textView"
             android:layout_below="@+id/botao_logar"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
             android:onClick="abrirCadastroUsuario" />
         <TextView
             android:layout_width="wrap_content"
