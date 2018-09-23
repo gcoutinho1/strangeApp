@@ -5,6 +5,6 @@ _Aplicativo de compartilhamento de imagens_
 
 > crie uma conta e compartilhe imagens com outras pessoas
 
-![preview](https://prnt.sc/kxn56x)
+![](https://i.imgur.com/8HkRGKU.png)
 
 
