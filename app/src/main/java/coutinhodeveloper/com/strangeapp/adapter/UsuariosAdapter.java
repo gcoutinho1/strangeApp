@@ -16,6 +16,10 @@ import java.util.List;
 
 import coutinhodeveloper.com.strangeapp.R;
 
+/** Created by Guilherme Coutinho
+ *  on 23/09/2018
+ */
+
 public class UsuariosAdapter extends ArrayAdapter<ParseUser> {
 
     private Context context;

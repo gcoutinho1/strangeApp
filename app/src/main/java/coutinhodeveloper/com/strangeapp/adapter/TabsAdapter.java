@@ -19,6 +19,10 @@ import coutinhodeveloper.com.strangeapp.R;
 import coutinhodeveloper.com.strangeapp.fragments.HomeFragment;
 import coutinhodeveloper.com.strangeapp.fragments.UsuariosFragment;
 
+/** Created by Guilherme Coutinho
+ *  on 23/09/2018
+ */
+
 public class TabsAdapter extends FragmentStatePagerAdapter {
 
     private Context context;

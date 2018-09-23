@@ -30,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
 
         editLoginUsuario = findViewById(R.id.edit_login_usuario);
         editLoginSenha = findViewById(R.id.edit_login_senha);
-        botaoLogar = findViewById(R.id.button_logar);
+        botaoLogar = findViewById(R.id.botao_logar);
 
         //ParseUser.logOut();
         //verificar usuario logado

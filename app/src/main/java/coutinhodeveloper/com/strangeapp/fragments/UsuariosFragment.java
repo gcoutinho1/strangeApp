@@ -23,6 +23,10 @@ import coutinhodeveloper.com.strangeapp.R;
 import coutinhodeveloper.com.strangeapp.activity.FeedUsuariosActivity;
 import coutinhodeveloper.com.strangeapp.adapter.UsuariosAdapter;
 
+/** Created by Guilherme Coutinho
+ *  on 23/09/2018
+ */
+
 /**
  * A simple {@link Fragment} subclass.
  */
